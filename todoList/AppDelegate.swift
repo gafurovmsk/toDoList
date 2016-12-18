@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    window?.makeKeyAndVisible()
+    
+    
+    let collectionViewController = CustomCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+    
+    
+    
+    
+    window?.rootViewController = UINavigationController(rootViewController: collectionViewController)
+    
+    
+    
+    
+    
+    
     return true
   }
 
